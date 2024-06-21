@@ -1,0 +1,49 @@
+﻿@model StudentCreateRequest
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Student Edit</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <form class="user" asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="FullName">FullName</label>
+                    <input asp-for="FullName" class="form-control" id="FullName" placeholder=" ">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input asp-for="Email" class="form-control" id="Email" placeholder=" ">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="BirthDate">BirthDate</label>
+                    <input asp-for="BirthDate" class="form-control" id="BirthDate" placeholder=" ">
+                    <span class="text-danger" asp-validation-for="BirthDate"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="FileName">FileName</label>
+                    <input asp-for="FileName" type="file" class="form-control" id="FileName" placeholder=" ">
+                    <span class="text-danger" asp-validation-for="FileName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="GroupId" class="control-label"></label>
+                    <select asp-for="GroupId" asp-items="@(new SelectList(ViewBag.Groups, "Id", "Name", ViewBag.SelectedGroupId))" class="form-control"></select>
+                 </div>
+                <button class="btn btn-primary" type="submit">Edit Student</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

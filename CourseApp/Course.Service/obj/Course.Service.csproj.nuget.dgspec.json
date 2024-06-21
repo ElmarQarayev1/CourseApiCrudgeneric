@@ -1,0 +1,221 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Service/Course.Service.csproj": {}
+  },
+  "projects": {
+    "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/Course.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/Course.Core.csproj",
+        "projectName": "Course.Core",
+        "projectPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/Course.Core.csproj",
+        "packagesPath": "/Users/elmar/.nuget/packages/",
+        "outputPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/elmar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/Course.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/Course.Data.csproj",
+        "projectName": "Course.Data",
+        "projectPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/Course.Data.csproj",
+        "packagesPath": "/Users/elmar/.nuget/packages/",
+        "outputPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/elmar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/Course.Core.csproj": {
+                "projectPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Core/Course.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Service/Course.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Service/Course.Service.csproj",
+        "projectName": "Course.Service",
+        "projectPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Service/Course.Service.csproj",
+        "packagesPath": "/Users/elmar/.nuget/packages/",
+        "outputPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/elmar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/Course.Data.csproj": {
+                "projectPath": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Data/Course.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

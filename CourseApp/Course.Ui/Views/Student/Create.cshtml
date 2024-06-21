@@ -1,0 +1,53 @@
+﻿@model StudentCreateRequest
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Students</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            Create
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <form class="user" asp-action="create" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="noInput">FullName</label>
+                    <input asp-for="FullName" class="form-control" id="FullNameInput" placeholder="Enter FullName here..">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GroupId" class="control-label"></label>
+                    <select asp-for="GroupId" class="form-control" asp-items="@(new SelectList(ViewBag.Groups,"Id","No"))"></select>
+                </div>
+                <div class="form-group">
+                    <label for="limitInput">Email</label>
+                    <input asp-for="Email" class="form-control" id="EmailInput" placeholder="Enter Email here..">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="limitInput">BirthDate</label>
+                    <input asp-for="BirthDate" class="form-control" id="BirthDateInput">
+                    <span class="text-danger" asp-validation-for="BirthDate"></span>
+                </div>
+                <div class="form-group">
+                    <label for="limitInput">File</label>
+                    <input asp-for="FileName" class="form-control" id="FileInput">
+                    <span class="text-danger" asp-validation-for="FileName"></span>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    Create Student
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Html.Partial("_ValidationScriptsPartial");
+}

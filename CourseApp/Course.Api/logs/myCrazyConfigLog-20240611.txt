@@ -1,0 +1,629 @@
+2024-06-11 00:39:15.625 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 00:39:15.637 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 00:39:15.638 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 00:39:15.638 +04:00 [INF] Hosting environment: Development
+2024-06-11 00:39:15.638 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 00:39:16.956 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 00:39:17.045 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 90.6917ms
+2024-06-11 00:39:17.159 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 00:39:17.210 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.4606ms
+2024-06-11 00:40:20.962 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Students application/json 135
+2024-06-11 00:40:20.977 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.Create (Course.Api)'
+2024-06-11 00:40:21.005 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 00:40:21.010 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.Create (Course.Api) in 2.6316ms
+2024-06-11 00:40:21.013 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.Create (Course.Api)'
+2024-06-11 00:40:21.060 +04:00 [ERR] HTTP POST /api/Students responded 500 in 88.2600 ms
+2024-06-11 00:40:21.061 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Students application/json 135 - 500 - application/json;+charset=utf-8 98.7736ms
+2024-06-11 00:46:13.597 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 00:46:13.610 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 00:46:13.612 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 00:46:13.612 +04:00 [INF] Hosting environment: Development
+2024-06-11 00:46:13.612 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 00:46:14.799 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 00:46:14.856 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 57.7004ms
+2024-06-11 00:46:14.945 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 00:46:14.985 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.9839ms
+2024-06-11 00:48:20.556 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 00:48:20.569 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 00:48:20.570 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 00:48:20.570 +04:00 [INF] Hosting environment: Development
+2024-06-11 00:48:20.570 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 00:48:21.739 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 00:48:21.806 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 67.8790ms
+2024-06-11 00:48:21.897 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 00:48:21.936 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.6048ms
+2024-06-11 00:48:27.984 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 00:48:27.997 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:48:28.017 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 00:48:28.591 +04:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 00:48:28.600 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 00:48:28.605 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 586.1975ms
+2024-06-11 00:48:28.605 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:48:28.606 +04:00 [INF] HTTP GET /api/Groups responded 200 in 613.0290 ms
+2024-06-11 00:48:28.608 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 623.9289ms
+2024-06-11 00:48:45.574 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students - -
+2024-06-11 00:48:45.575 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 00:48:45.578 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 00:48:45.650 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[FullName], [s].[Email], [s].[BirthDate] AS [Birthdate], [g].[No] AS [GroupName]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [s].[FullName]) > 0
+2024-06-11 00:48:45.650 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 00:48:45.653 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetAll (Course.Api) in 74.8781ms
+2024-06-11 00:48:45.653 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 00:48:45.653 +04:00 [INF] HTTP GET /api/Students responded 200 in 77.8582 ms
+2024-06-11 00:48:45.653 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students - - - 200 - application/json;+charset=utf-8 79.4693ms
+2024-06-11 00:49:09.961 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Students application/json 126
+2024-06-11 00:49:09.961 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.Create (Course.Api)'
+2024-06-11 00:49:09.973 +04:00 [INF] Route matched with {action = "Create", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.StudentDtos.StudentCreateDto) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 00:49:10.015 +04:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Course.Service.Exceptions.RestExceptionError, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 00:49:10.019 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.Create (Course.Api) in 45.4876ms
+2024-06-11 00:49:10.019 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.Create (Course.Api)'
+2024-06-11 00:49:10.019 +04:00 [INF] HTTP POST /api/Students responded 400 in 57.7383 ms
+2024-06-11 00:49:10.019 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Students application/json 126 - 400 - application/json;+charset=utf-8 58.4445ms
+2024-06-11 00:49:39.804 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Groups application/json 34
+2024-06-11 00:49:39.806 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Create (Course.Api)'
+2024-06-11 00:49:39.808 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 00:49:39.898 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__createDto_No_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Groups] AS [g]
+        WHERE [g].[No] = @__createDto_No_0 AND [g].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-11 00:49:39.966 +04:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 1) (DbType = Byte), @p3='?' (DbType = DateTime2), @p4='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Groups] ([CreateAt], [IsDeleted], [Limit], [ModifiedAt], [No])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-11 00:49:39.972 +04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 00:49:39.973 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Create (Course.Api) in 164.783ms
+2024-06-11 00:49:39.973 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Create (Course.Api)'
+2024-06-11 00:49:39.973 +04:00 [INF] HTTP POST /api/Groups responded 201 in 167.3435 ms
+2024-06-11 00:49:39.973 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Groups application/json 34 - 201 - application/json;+charset=utf-8 169.1552ms
+2024-06-11 00:49:56.165 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 00:49:56.166 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:49:56.166 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 00:49:56.178 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 00:49:56.179 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 00:49:56.179 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 13.0417ms
+2024-06-11 00:49:56.179 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:49:56.179 +04:00 [INF] HTTP GET /api/Groups responded 200 in 13.6340 ms
+2024-06-11 00:49:56.180 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 14.4516ms
+2024-06-11 00:51:34.953 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 00:51:34.965 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 00:51:34.966 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 00:51:34.966 +04:00 [INF] Hosting environment: Development
+2024-06-11 00:51:34.966 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 00:51:36.167 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 00:51:36.226 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 59.3670ms
+2024-06-11 00:51:36.317 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 00:51:36.357 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.9877ms
+2024-06-11 00:51:41.438 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 00:51:41.449 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:51:41.469 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 00:51:41.474 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 2.7995ms
+2024-06-11 00:51:41.476 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 00:51:41.533 +04:00 [ERR] HTTP GET /api/Groups responded 500 in 88.3906 ms
+2024-06-11 00:51:41.533 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 500 - application/json;+charset=utf-8 95.1385ms
+2024-06-11 07:46:22.927 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 07:46:22.939 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 07:46:22.940 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 07:46:22.940 +04:00 [INF] Hosting environment: Development
+2024-06-11 07:46:22.940 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 07:46:26.014 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 07:46:26.093 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 79.2657ms
+2024-06-11 07:46:26.264 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 07:46:26.310 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.9139ms
+2024-06-11 07:46:30.950 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 07:46:30.967 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 07:46:30.990 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 07:46:31.588 +04:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 07:46:31.597 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 07:46:31.602 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 611.111ms
+2024-06-11 07:46:31.603 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 07:46:31.603 +04:00 [INF] HTTP GET /api/Groups responded 200 in 643.1796 ms
+2024-06-11 07:46:31.606 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 655.9465ms
+2024-06-11 07:55:08.991 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 07:55:09.003 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 07:55:09.004 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 07:55:09.004 +04:00 [INF] Hosting environment: Development
+2024-06-11 07:55:09.004 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 07:55:10.265 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 07:55:10.336 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 72.6247ms
+2024-06-11 07:55:10.440 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 07:55:10.483 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.9698ms
+2024-06-11 07:55:15.653 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 07:55:15.668 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 07:55:15.687 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 07:55:15.692 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 2.8902ms
+2024-06-11 07:55:15.695 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 07:55:15.750 +04:00 [ERR] HTTP GET /api/Groups responded 500 in 87.5553 ms
+2024-06-11 07:55:15.750 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 500 - application/json;+charset=utf-8 96.7041ms
+2024-06-11 07:58:58.216 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 07:58:58.228 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 07:58:58.229 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 07:58:58.229 +04:00 [INF] Hosting environment: Development
+2024-06-11 07:58:58.229 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 07:58:59.730 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 07:58:59.798 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 68.8990ms
+2024-06-11 07:58:59.897 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 07:58:59.935 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.3591ms
+2024-06-11 07:59:05.239 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 07:59:05.249 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 07:59:05.269 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:00:40.873 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 08:01:03.501 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 08:01:03.542 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 118289.1423ms
+2024-06-11 08:01:03.542 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 08:01:13.285 +04:00 [INF] HTTP GET /api/Groups responded 200 in 128058.0597 ms
+2024-06-11 08:01:13.289 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 128068.0947ms
+2024-06-11 08:01:46.138 +04:00 [INF] Request starting HTTP/1.1 POST https://localhost:7064/api/Groups application/json 34
+2024-06-11 08:01:46.143 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Create (Course.Api)'
+2024-06-11 08:01:46.155 +04:00 [INF] Route matched with {action = "Create", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Create(Course.Service.Dtos.GroupDtos.GroupCreateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:01:46.266 +04:00 [INF] Executed DbCommand (42ms) [Parameters=[@__createDto_No_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Groups] AS [g]
+        WHERE [g].[No] = @__createDto_No_0 AND [g].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-11 08:01:46.333 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 1) (DbType = Byte), @p3='?' (DbType = DateTime2), @p4='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Groups] ([CreateAt], [IsDeleted], [Limit], [ModifiedAt], [No])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-06-11 08:01:46.339 +04:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 08:01:46.341 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Create (Course.Api) in 185.3097ms
+2024-06-11 08:01:46.341 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Create (Course.Api)'
+2024-06-11 08:01:46.341 +04:00 [INF] HTTP POST /api/Groups responded 201 in 198.1366 ms
+2024-06-11 08:01:46.341 +04:00 [INF] Request finished HTTP/1.1 POST https://localhost:7064/api/Groups application/json 34 - 201 - application/json;+charset=utf-8 203.5442ms
+2024-06-11 08:01:56.837 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 08:01:56.838 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 08:01:56.838 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:02:02.851 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 08:02:02.852 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 08:02:02.852 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 6013.8335ms
+2024-06-11 08:02:02.852 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 08:02:02.852 +04:00 [INF] HTTP GET /api/Groups responded 200 in 6014.4959 ms
+2024-06-11 08:02:02.852 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 6015.3317ms
+2024-06-11 08:02:49.136 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Groups/4 application/json 45
+2024-06-11 08:02:49.139 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:02:49.146 +04:00 [INF] Route matched with {action = "Update", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.GroupDtos.GroupUpdateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:02:49.237 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreateAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-11 08:02:51.521 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Update (Course.Api) in 2374.3144ms
+2024-06-11 08:02:51.522 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:02:51.536 +04:00 [ERR] HTTP PUT /api/Groups/4 responded 500 in 2397.4074 ms
+2024-06-11 08:02:51.536 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Groups/4 application/json 45 - 500 - application/json;+charset=utf-8 2400.5462ms
+2024-06-11 08:03:31.034 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Groups/2002 application/json 48
+2024-06-11 08:03:31.038 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:03:31.039 +04:00 [INF] Route matched with {action = "Update", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.GroupDtos.GroupUpdateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:03:31.069 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreateAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-11 08:03:31.121 +04:00 [INF] Executed DbCommand (31ms) [Parameters=[@__updateDto_No_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Groups] AS [g]
+        WHERE [g].[No] = @__updateDto_No_0 AND [g].[IsDeleted] = CAST(0 AS bit)) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-06-11 08:03:31.165 +04:00 [INF] Executed DbCommand (33ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 1) (DbType = Byte), @p1='?' (DbType = DateTime2), @p2='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Groups] SET [Limit] = @p0, [ModifiedAt] = @p1, [No] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2024-06-11 08:03:31.172 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-06-11 08:03:31.173 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Update (Course.Api) in 133.5256ms
+2024-06-11 08:03:31.173 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:03:31.173 +04:00 [INF] HTTP PUT /api/Groups/2002 responded 204 in 135.9180 ms
+2024-06-11 08:03:31.174 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Groups/2002 application/json 48 - 204 - - 140.8621ms
+2024-06-11 08:04:35.786 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 08:04:35.799 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 08:04:35.800 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 08:04:35.800 +04:00 [INF] Hosting environment: Development
+2024-06-11 08:04:35.800 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 08:04:37.133 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 08:04:37.194 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 62.3668ms
+2024-06-11 08:04:37.347 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 08:04:37.390 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.9208ms
+2024-06-11 08:04:59.065 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Groups/17 application/json 46
+2024-06-11 08:04:59.077 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:04:59.104 +04:00 [INF] Route matched with {action = "Update", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.GroupDtos.GroupUpdateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:05:14.535 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreateAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-11 08:05:20.095 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Update (Course.Api) in 20989.5145ms
+2024-06-11 08:05:20.098 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:05:22.766 +04:00 [INF] HTTP PUT /api/Groups/17 responded 404 in 23694.4147 ms
+2024-06-11 08:05:22.771 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Groups/17 application/json 46 - 404 - application/json;+charset=utf-8 23705.9680ms
+2024-06-11 08:05:27.095 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Groups/17 application/json 46
+2024-06-11 08:05:27.097 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:05:27.098 +04:00 [INF] Route matched with {action = "Update", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.GroupDtos.GroupUpdateDto) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 08:05:48.862 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreateAt], [t].[IsDeleted], [t].[Limit], [t].[ModifiedAt], [t].[No], [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM (
+    SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+    FROM [Groups] AS [g]
+    WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+) AS [t]
+LEFT JOIN [Students] AS [s] ON [t].[Id] = [s].[GroupId]
+ORDER BY [t].[Id]
+2024-06-11 08:05:51.675 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.Update (Course.Api) in 24577.5105ms
+2024-06-11 08:05:51.678 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.Update (Course.Api)'
+2024-06-11 08:05:54.638 +04:00 [INF] HTTP PUT /api/Groups/17 responded 404 in 27541.9206 ms
+2024-06-11 08:05:54.639 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Groups/17 application/json 46 - 404 - application/json;+charset=utf-8 27544.1128ms
+2024-06-11 12:19:27.252 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 12:19:27.266 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 12:19:27.267 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 12:19:27.268 +04:00 [INF] Hosting environment: Development
+2024-06-11 12:19:27.268 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 12:19:29.696 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 12:19:29.757 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 62.2065ms
+2024-06-11 12:19:29.954 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 12:19:29.993 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.8313ms
+2024-06-11 12:23:22.094 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 12:23:22.107 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 12:23:22.108 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 12:23:22.108 +04:00 [INF] Hosting environment: Development
+2024-06-11 12:23:22.108 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 12:23:23.287 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 12:23:23.344 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 58.4210ms
+2024-06-11 12:23:23.432 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 12:23:23.471 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.8745ms
+2024-06-11 12:35:59.987 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 12:36:00.000 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 12:36:00.001 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 12:36:00.002 +04:00 [INF] Hosting environment: Development
+2024-06-11 12:36:00.002 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 12:36:01.253 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 12:36:01.318 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 66.9810ms
+2024-06-11 12:36:01.415 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 12:36:01.452 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.2170ms
+2024-06-11 12:53:09.383 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 12:53:09.402 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 12:53:09.403 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 12:53:09.403 +04:00 [INF] Hosting environment: Development
+2024-06-11 12:53:09.403 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 12:53:10.608 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 12:53:10.669 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 61.5990ms
+2024-06-11 12:53:10.759 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 12:53:10.797 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.2085ms
+2024-06-11 12:53:35.586 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups/2 - -
+2024-06-11 12:53:35.599 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 12:53:35.623 +04:00 [INF] Route matched with {action = "GetById", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.GroupDtos.GroupDetailsDto] GetById(Int32) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 12:53:36.216 +04:00 [INF] Executed DbCommand (38ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+FROM [Groups] AS [g]
+WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 12:53:36.243 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.GroupDtos.GroupDetailsDto'.
+2024-06-11 12:53:36.250 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetById (Course.Api) in 623.6844ms
+2024-06-11 12:53:36.250 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 12:53:36.251 +04:00 [INF] HTTP GET /api/Groups/2 responded 200 in 657.1392 ms
+2024-06-11 12:53:36.253 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups/2 - - - 200 - application/json;+charset=utf-8 669.2400ms
+2024-06-11 12:53:57.265 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-11 12:53:57.270 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 12:53:57.274 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 12:53:57.381 +04:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [g].[No]) > 0
+2024-06-11 12:53:57.382 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 12:53:57.382 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 108.4476ms
+2024-06-11 12:53:57.382 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-11 12:53:57.382 +04:00 [INF] HTTP GET /api/Groups responded 200 in 113.0341 ms
+2024-06-11 12:53:57.383 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 117.8697ms
+2024-06-11 12:54:06.119 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students - -
+2024-06-11 12:54:06.120 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 12:54:06.121 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 12:54:06.166 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[FullName], [s].[Email], [s].[BirthDate] AS [Birthdate], [g].[No] AS [GroupName]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [s].[FullName]) > 0
+2024-06-11 12:54:06.167 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 12:54:06.171 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetAll (Course.Api) in 49.25ms
+2024-06-11 12:54:06.171 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 12:54:06.171 +04:00 [INF] HTTP GET /api/Students responded 200 in 51.1711 ms
+2024-06-11 12:54:06.171 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students - - - 200 - application/json;+charset=utf-8 51.9284ms
+2024-06-11 12:54:15.478 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 12:54:15.480 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 12:54:15.482 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 12:54:15.497 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 12:54:15.514 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.StudentDtos.StudentDetailsDto'.
+2024-06-11 12:54:15.518 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 36.2215ms
+2024-06-11 12:54:15.518 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 12:54:15.518 +04:00 [INF] HTTP GET /api/Students/1 responded 200 in 38.5095 ms
+2024-06-11 12:54:15.518 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 200 - application/json;+charset=utf-8 40.2460ms
+2024-06-11 12:55:18.074 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Students/1 application/json 143
+2024-06-11 12:55:18.077 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.Update (Course.Api)'
+2024-06-11 12:55:18.081 +04:00 [INF] Route matched with {action = "Update", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.StudentDtos.StudentUpdateDto) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 12:55:18.122 +04:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Course.Service.Exceptions.RestExceptionError, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 12:55:18.127 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.Update (Course.Api) in 45.3723ms
+2024-06-11 12:55:18.127 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.Update (Course.Api)'
+2024-06-11 12:55:18.127 +04:00 [INF] HTTP PUT /api/Students/1 responded 400 in 49.7748 ms
+2024-06-11 12:55:18.127 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Students/1 application/json 143 - 400 - application/json;+charset=utf-8 53.1912ms
+2024-06-11 12:58:24.921 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 12:58:24.938 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 12:58:24.940 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 12:58:24.940 +04:00 [INF] Hosting environment: Development
+2024-06-11 12:58:24.940 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 12:58:26.119 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 12:58:26.180 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 61.7896ms
+2024-06-11 12:58:26.268 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 12:58:26.307 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.4731ms
+2024-06-11 12:59:15.935 +04:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7064/api/Students/1 application/json 143
+2024-06-11 12:59:15.951 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.Update (Course.Api)'
+2024-06-11 12:59:15.979 +04:00 [INF] Route matched with {action = "Update", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, Course.Service.Dtos.StudentDtos.StudentUpdateDto) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 12:59:16.080 +04:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[Course.Service.Exceptions.RestExceptionError, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 12:59:16.085 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.Update (Course.Api) in 104.8277ms
+2024-06-11 12:59:16.086 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.Update (Course.Api)'
+2024-06-11 12:59:16.086 +04:00 [INF] HTTP PUT /api/Students/1 responded 400 in 140.7750 ms
+2024-06-11 12:59:16.087 +04:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7064/api/Students/1 application/json 143 - 400 - application/json;+charset=utf-8 152.6536ms
+2024-06-11 13:04:11.560 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:04:11.577 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:04:11.578 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:04:11.578 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:04:11.579 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:04:12.956 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:04:13.015 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 59.8657ms
+2024-06-11 13:04:13.157 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:04:13.197 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.6974ms
+2024-06-11 13:06:53.210 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:06:53.226 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:06:53.227 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:06:53.227 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:06:53.227 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:06:54.465 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:06:54.540 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 76.4922ms
+2024-06-11 13:06:54.635 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:06:54.672 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.0390ms
+2024-06-11 13:07:02.342 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 13:07:02.370 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:07:02.390 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:07:02.945 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:07:02.972 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.StudentDtos.StudentDetailsDto'.
+2024-06-11 13:07:02.977 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 586.5761ms
+2024-06-11 13:07:02.978 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:07:02.978 +04:00 [INF] HTTP GET /api/Students/1 responded 200 in 611.6234 ms
+2024-06-11 13:07:02.981 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 200 - application/json;+charset=utf-8 639.1587ms
+2024-06-11 13:13:10.021 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:13:10.035 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:13:10.036 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:13:10.036 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:13:10.036 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:13:11.253 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:13:11.310 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 57.6775ms
+2024-06-11 13:13:11.398 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:13:11.435 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.6392ms
+2024-06-11 13:13:18.928 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students - -
+2024-06-11 13:13:18.942 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 13:13:18.967 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:13:19.507 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[FullName], [s].[Email], [s].[BirthDate] AS [Birthdate], [g].[No] AS [GroupName]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [s].[FullName]) > 0
+2024-06-11 13:13:19.515 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 13:13:19.520 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetAll (Course.Api) in 552.7176ms
+2024-06-11 13:13:19.521 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 13:13:19.521 +04:00 [INF] HTTP GET /api/Students responded 200 in 586.8342 ms
+2024-06-11 13:13:19.524 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students - - - 200 - application/json;+charset=utf-8 595.7889ms
+2024-06-11 13:13:28.488 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 13:13:28.490 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:13:28.501 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:13:28.587 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:13:28.607 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.StudentDtos.StudentDetailsDto'.
+2024-06-11 13:13:28.608 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 106.8737ms
+2024-06-11 13:13:28.608 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:13:28.608 +04:00 [INF] HTTP GET /api/Students/1 responded 200 in 118.8673 ms
+2024-06-11 13:13:28.608 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 200 - application/json;+charset=utf-8 120.2880ms
+2024-06-11 13:16:41.394 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:16:41.408 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:16:41.409 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:16:41.409 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:16:41.409 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:16:42.721 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:16:42.788 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 68.7085ms
+2024-06-11 13:16:42.893 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:16:42.935 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.9343ms
+2024-06-11 13:16:49.300 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students - -
+2024-06-11 13:16:49.313 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 13:16:49.334 +04:00 [INF] Route matched with {action = "GetAll", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.StudentDtos.StudentGetDto]] GetAll() on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:16:49.884 +04:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[FullName], [s].[Email], [s].[BirthDate] AS [Birthdate], [g].[No] AS [GroupName]
+FROM [Students] AS [s]
+INNER JOIN [Groups] AS [g] ON [s].[GroupId] = [g].[Id]
+WHERE (NULL LIKE N'') OR CHARINDEX(NULL, [s].[FullName]) > 0
+2024-06-11 13:16:49.892 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.StudentDtos.StudentGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-11 13:16:49.897 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetAll (Course.Api) in 562.0397ms
+2024-06-11 13:16:49.898 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetAll (Course.Api)'
+2024-06-11 13:16:49.898 +04:00 [INF] HTTP GET /api/Students responded 200 in 591.1918 ms
+2024-06-11 13:16:49.901 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students - - - 200 - application/json;+charset=utf-8 600.8662ms
+2024-06-11 13:16:58.816 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 13:16:58.817 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:16:58.828 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:16:58.917 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:16:58.936 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.StudentDtos.StudentDetailsDto'.
+2024-06-11 13:16:58.938 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 109.9023ms
+2024-06-11 13:16:58.938 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:16:58.938 +04:00 [INF] HTTP GET /api/Students/1 responded 200 in 120.6177 ms
+2024-06-11 13:16:58.938 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 200 - application/json;+charset=utf-8 122.2967ms
+2024-06-11 13:17:29.927 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:17:29.940 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:17:29.941 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:17:29.941 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:17:29.941 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:17:31.149 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:17:31.216 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 68.8745ms
+2024-06-11 13:17:31.315 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:17:31.364 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 48.8335ms
+2024-06-11 13:17:37.365 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups/1 - -
+2024-06-11 13:17:37.379 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 13:17:37.404 +04:00 [INF] Route matched with {action = "GetById", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.GroupDtos.GroupDetailsDto] GetById(Int32) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 13:17:37.976 +04:00 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+FROM [Groups] AS [g]
+WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:17:38.002 +04:00 [INF] Executing ObjectResult, writing value of type 'Course.Service.Dtos.GroupDtos.GroupDetailsDto'.
+2024-06-11 13:17:38.008 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetById (Course.Api) in 602.422ms
+2024-06-11 13:17:38.008 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 13:17:38.009 +04:00 [INF] HTTP GET /api/Groups/1 responded 200 in 636.8997 ms
+2024-06-11 13:17:38.011 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups/1 - - - 200 - application/json;+charset=utf-8 646.0629ms
+2024-06-11 13:17:56.525 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:17:56.537 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:17:56.538 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:17:56.538 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:17:56.538 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:17:57.747 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:17:57.810 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 64.0329ms
+2024-06-11 13:17:57.900 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:17:57.950 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.2937ms
+2024-06-11 13:18:04.802 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 13:18:04.814 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:18:04.845 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 13:18:05.386 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:18:17.284 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 12436.5362ms
+2024-06-11 13:18:17.286 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 13:18:17.306 +04:00 [ERR] HTTP GET /api/Students/1 responded 500 in 12497.2357 ms
+2024-06-11 13:18:17.311 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 500 - application/json;+charset=utf-8 12508.2804ms
+2024-06-11 13:19:06.728 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 13:19:06.741 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 13:19:06.742 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 13:19:06.742 +04:00 [INF] Hosting environment: Development
+2024-06-11 13:19:06.743 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 13:19:07.901 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 13:19:07.958 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 57.1811ms
+2024-06-11 13:19:08.050 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 13:19:08.089 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.9232ms
+2024-06-11 13:19:16.069 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups/1 - -
+2024-06-11 13:19:16.086 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 13:19:16.110 +04:00 [INF] Route matched with {action = "GetById", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.GroupDtos.GroupDetailsDto] GetById(Int32) on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-11 13:19:16.644 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [g].[Id], [g].[CreateAt], [g].[IsDeleted], [g].[Limit], [g].[ModifiedAt], [g].[No]
+FROM [Groups] AS [g]
+WHERE [g].[Id] = @__id_0 AND [g].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 13:19:24.728 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetById (Course.Api) in 8615.3736ms
+2024-06-11 13:19:24.729 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetById (Course.Api)'
+2024-06-11 13:19:24.747 +04:00 [ERR] HTTP GET /api/Groups/1 responded 500 in 8669.2006 ms
+2024-06-11 13:19:24.750 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups/1 - - - 500 - application/json;+charset=utf-8 8681.0322ms
+2024-06-11 19:20:42.761 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 19:20:42.773 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 19:20:42.774 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 19:20:42.774 +04:00 [INF] Hosting environment: Development
+2024-06-11 19:20:42.774 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 19:20:45.375 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 19:20:45.434 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 59.4894ms
+2024-06-11 19:20:45.597 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 19:20:45.643 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.4412ms
+2024-06-11 19:21:58.511 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 19:21:58.523 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 19:21:58.524 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 19:21:58.525 +04:00 [INF] Hosting environment: Development
+2024-06-11 19:21:58.525 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 19:21:59.691 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 19:21:59.747 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 56.3731ms
+2024-06-11 19:21:59.834 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 19:21:59.876 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.7342ms
+2024-06-11 19:22:05.292 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 19:22:05.304 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 19:22:05.329 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 19:22:05.886 +04:00 [INF] Executed DbCommand (27ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[BirthDate], [s].[CreateAt], [s].[Email], [s].[FileName], [s].[FullName], [s].[GroupId], [s].[IsDeleted], [s].[ModifiedAt]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__id_0 AND [s].[IsDeleted] = CAST(0 AS bit)
+2024-06-11 19:22:55.744 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 50413.674ms
+2024-06-11 19:22:55.745 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 19:22:55.761 +04:00 [ERR] HTTP GET /api/Students/1 responded 500 in 50463.3190 ms
+2024-06-11 19:22:55.764 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 500 - application/json;+charset=utf-8 50472.2503ms
+2024-06-11 19:23:13.036 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-11 19:23:13.051 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-11 19:23:13.052 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 19:23:13.053 +04:00 [INF] Hosting environment: Development
+2024-06-11 19:23:13.053 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApiRepo/CourseApp/Course.Api
+2024-06-11 19:23:14.170 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-11 19:23:14.235 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 65.6150ms
+2024-06-11 19:23:14.326 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-11 19:23:14.365 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.3715ms
+2024-06-11 19:23:20.699 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Students/1 - -
+2024-06-11 19:23:20.710 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 19:23:20.737 +04:00 [INF] Route matched with {action = "GetById", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[Course.Service.Dtos.StudentDtos.StudentDetailsDto] GetById(Int32) on controller Course.Api.Controllers.StudentsController (Course.Api).
+2024-06-11 19:23:42.968 +04:00 [INF] Executed action Course.Api.Controllers.StudentsController.GetById (Course.Api) in 22229.639ms
+2024-06-11 19:23:42.969 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.StudentsController.GetById (Course.Api)'
+2024-06-11 19:23:42.985 +04:00 [ERR] HTTP GET /api/Students/1 responded 500 in 22279.9877 ms
+2024-06-11 19:23:42.987 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Students/1 - - - 500 - application/json;+charset=utf-8 22288.2984ms

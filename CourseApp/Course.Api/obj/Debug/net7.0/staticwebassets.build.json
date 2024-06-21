@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "jdratquMi/ksXHc7Hy5z/8EKIMqau4H5+dgDKsLJeqg=",
+  "Source": "Course.Api",
+  "BasePath": "_content/Course.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Course.Api/wwwroot",
+      "Source": "Course.Api",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/uploads/students/5cc8ef21-f829-485a-aac1-9b0b1d78426cXIGE.png",
+      "SourceId": "Course.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "RelativePath": "uploads/students/5cc8ef21-f829-485a-aac1-9b0b1d78426cXIGE.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/students/5cc8ef21-f829-485a-aac1-9b0b1d78426cXIGE.png"
+    },
+    {
+      "Identity": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg",
+      "SourceId": "Course.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "RelativePath": "uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/students/b9961df9-0665-4ca1-8c7d-e4551e33d514teacher1.jpg"
+    },
+    {
+      "Identity": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/uploads/students/fd7e4f18-dc84-4089-ae85-d9cfdcc85340teacher6.jpg",
+      "SourceId": "Course.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/elmar/Desktop/CodeAcademy/API/CourseApiCrudGeneric/CourseApp/Course.Api/wwwroot/",
+      "BasePath": "_content/Course.Api",
+      "RelativePath": "uploads/students/fd7e4f18-dc84-4089-ae85-d9cfdcc85340teacher6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/students/fd7e4f18-dc84-4089-ae85-d9cfdcc85340teacher6.jpg"
+    }
+  ]
+}

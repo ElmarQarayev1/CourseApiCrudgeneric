@@ -1,0 +1,39 @@
+﻿@model GroupCreateRequest
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Groups</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            Edit
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <form class="user" asp-action="edit" method="post">
+                <div class="form-group">
+                    <label for="noInput">No</label>
+                    <input asp-for="No" class="form-control" id="noInput" placeholder="Enter No here..">
+                    <span class="text-danger" asp-validation-for="No"></span>
+                </div>
+                <div class="form-group">
+                    <label for="limitInput">Limit</label>
+                    <input asp-for="Limit" class="form-control" id="limitInput" placeholder="Enter Limit here..">
+                    <span class="text-danger" asp-validation-for="Limit"></span>
+                </div>
+                <button class="btn btn-primary" type="submit">
+                    Edit Group
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Html.Partial("_ValidationScriptsPartial");
+}

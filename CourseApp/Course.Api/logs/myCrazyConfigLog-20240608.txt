@@ -1,0 +1,31 @@
+2024-06-08 15:22:04.479 +04:00 [INF] Now listening on: https://localhost:7064
+2024-06-08 15:22:04.490 +04:00 [INF] Now listening on: http://localhost:5166
+2024-06-08 15:22:04.491 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-08 15:22:04.492 +04:00 [INF] Hosting environment: Development
+2024-06-08 15:22:04.492 +04:00 [INF] Content root path: /Users/elmar/Desktop/CodeAcademy/API/CourseApi1/CourseApp/Course.Api
+2024-06-08 15:22:06.833 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/index.html - -
+2024-06-08 15:22:06.906 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/index.html - - - 200 - text/html;charset=utf-8 74.6693ms
+2024-06-08 15:22:07.042 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - -
+2024-06-08 15:22:07.084 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.4492ms
+2024-06-08 15:22:07.168 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/apple-touch-icon-precomposed.png - -
+2024-06-08 15:22:07.171 +04:00 [INF] HTTP GET /apple-touch-icon-precomposed.png responded 404 in 1.4135 ms
+2024-06-08 15:22:07.173 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/apple-touch-icon-precomposed.png - - - 404 0 - 5.1871ms
+2024-06-08 15:22:07.173 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/apple-touch-icon.png - -
+2024-06-08 15:22:07.173 +04:00 [INF] HTTP GET /apple-touch-icon.png responded 404 in 0.0328 ms
+2024-06-08 15:22:07.174 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/apple-touch-icon.png - - - 404 0 - 0.2035ms
+2024-06-08 15:23:06.523 +04:00 [INF] Request starting HTTP/1.1 GET https://localhost:7064/api/Groups - -
+2024-06-08 15:23:06.542 +04:00 [INF] Executing endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-08 15:23:06.563 +04:00 [INF] Route matched with {action = "GetAll", controller = "Groups"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Course.Service.Dtos.GroupDtos.GroupGetDto]] GetAll() on controller Course.Api.Controllers.GroupsController (Course.Api).
+2024-06-08 15:23:07.166 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[No], [g].[Limit], (
+    SELECT COUNT(*)
+    FROM [Students] AS [s]
+    WHERE [g].[Id] = [s].[GroupId]) AS [StudentCount]
+FROM [Groups] AS [g]
+WHERE [g].[IsDeleted] = CAST(0 AS bit)
+2024-06-08 15:23:07.173 +04:00 [INF] All Info =>[{"Id":1,"No":"Pb304","Limit":12,"StudentCount":1,"$type":"GroupGetDto"},{"Id":2,"No":"Pb302","Limit":12,"StudentCount":0,"$type":"GroupGetDto"}]
+2024-06-08 15:23:07.178 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course.Service.Dtos.GroupDtos.GroupGetDto, Course.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-08 15:23:07.184 +04:00 [INF] Executed action Course.Api.Controllers.GroupsController.GetAll (Course.Api) in 619.341ms
+2024-06-08 15:23:07.184 +04:00 [INF] Executed endpoint 'Course.Api.Controllers.GroupsController.GetAll (Course.Api)'
+2024-06-08 15:23:07.184 +04:00 [INF] HTTP GET /api/Groups responded 200 in 645.4284 ms
+2024-06-08 15:23:07.186 +04:00 [INF] Request finished HTTP/1.1 GET https://localhost:7064/api/Groups - - - 200 - application/json;+charset=utf-8 664.1832ms

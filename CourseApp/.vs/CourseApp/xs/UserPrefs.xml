@@ -1,0 +1,132 @@
+﻿<Properties StartupConfiguration="Birden Çok Proje">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Birden Çok Proje" Name="Birden Çok Proje">
+      <Items>
+        <StartupItem ItemId="{7707CD6E-0247-4C43-89A2-AEAB5F8DA4B8}" ItemName="Course.Api" ConfigurationId="https" />
+        <StartupItem ItemId="{20C05DB8-0A1D-4A86-ABE8-7EF70D1F05CF}" ItemName="Course.Ui" ConfigurationId="https" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.Course.Ui PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.Course.Api PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Course.Ui/Service/CrudService.cs">
+    <Files>
+      <File FileName="Course.Api/Program.cs" />
+      <File FileName="Course.Api/appsettings.json" />
+      <File FileName="Course.Core/Entities/Group.cs" />
+      <File FileName="Course.Core/Entities/BaseEntity.cs" />
+      <File FileName="Course.Core/Entities/AuditEntity.cs" />
+      <File FileName="Course.Core/Entities/Student.cs" />
+      <File FileName="Course.Data/Configurations/GroupConfiguration.cs" />
+      <File FileName="Course.Data/Configurations/StudentConfiguration.cs" />
+      <File FileName="Course.Data/AppDbContext.cs" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupCreateDto.cs" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupDetailsDto.cs" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupGetDto.cs" />
+      <File FileName="Course.Service/Dtos/GroupDtos/GroupUpdateDto.cs" />
+      <File FileName="Course.Service/Interfaces/IGroupService.cs" />
+      <File FileName="Course.Service/Exceptions/DublicateEntityException.cs" />
+      <File FileName="Course.Service/Exceptions/EntityNotFoundException.cs" />
+      <File FileName="Course.Api/Controllers/StudentsController.cs" />
+      <File FileName="Course.Api/Controllers/GroupsController.cs" />
+      <File FileName="Course.Service/Implementations/GroupService.cs" />
+      <File FileName="Course.Service/Interfaces/IStudentService.cs" />
+      <File FileName="Course.Service/Implementations/StudentService.cs" Line="223" Column="12" />
+      <File FileName="Course.Service/Exceptions/RestException.cs" />
+      <File FileName="Course.Api/Middlewares/ExceptionHandlerMiddleware.cs" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentUpdateDto.cs" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentCreateDto.cs" />
+      <File FileName="Course.Api/logs/myCrazyConfigLog-20240608.txt" />
+      <File FileName="Course.Data/Migrations/20240610195219_addedimg.cs" />
+      <File FileName="Course.Data/Repostories/Implementations/GroupRepository.cs" />
+      <File FileName="Course.Data/Repostories/Implementations/StudentRepository.cs" />
+      <File FileName="Course.Data/Repostories/Implementations/Repository.cs" />
+      <File FileName="Course.Data/Repostories/Interfaces/IGroupRepository.cs" />
+      <File FileName="Course.Data/Repostories/Interfaces/IStudentRepository.cs" />
+      <File FileName="Course.Data/Repostories/Interfaces/IRepository.cs" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentGetDto.cs" />
+      <File FileName="Course.Service/Helpers/FileManager.cs" />
+      <File FileName="Course.Service/Dtos/StudentDtos/StudentDetailsDto.cs" />
+      <File FileName="Course.Service/Profiles/MapProfile.cs" />
+      <File FileName="Course.Core/Entities/AppUser.cs" />
+      <File FileName="Course.Data/Migrations/20240606043524_TablesCreated.cs" />
+      <File FileName="Course.Data/Migrations/20240611212215_UsersTablesCreated.cs" />
+      <File FileName="Course.Service/Dtos/UserDtos/UserLoginDto.cs" />
+      <File FileName="Course.Service/Implementations/AuthService.cs" />
+      <File FileName="Course.Service/Interfaces/IAuthService.cs" />
+      <File FileName="Course.Api/Controllers/AuthController.cs" />
+      <File FileName="Course.Ui/Controllers/HomeController.cs" />
+      <File FileName="Course.Ui/Controllers/GroupController.cs" Line="105" Column="16" />
+      <File FileName="Course.Ui/Resources/GroupListItemGetResource.cs" />
+      <File FileName="Course.Ui/Views/_ViewImports.cshtml" />
+      <File FileName="Course.Ui/Views/Group/Index.cshtml" />
+      <File FileName="Course.Ui/Views/Home/Error.cshtml" />
+      <File FileName="Course.Service/Dtos/PaginatedList.cs" />
+      <File FileName="Course.Ui/Views/Home/Index.cshtml" />
+      <File FileName="Course.Ui/Program.cs" Line="16" Column="1" />
+      <File FileName="Course.Ui/Views/Shared/_Layout.cshtml" />
+      <File FileName="Course.Ui/Resources/GroupCreateRequest.cs" />
+      <File FileName="Course.Ui/Resources/ErrorResponse.cs" />
+      <File FileName="Course.Ui/Filter/AuthFilter.cs" />
+      <File FileName="Course.Ui/Views/Account/Login.cshtml" />
+      <File FileName="Course.Ui/Controllers/AccountController.cs" />
+      <File FileName="Course.Ui/Resources/LoginRequest.cs" />
+      <File FileName="Course.Ui/Resources/LoginResponse.cs" />
+      <File FileName="Course.Ui/Views/_ViewStart.cshtml" />
+      <File FileName="Course.Ui/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="Course.Ui/Views/Group/Edit.cshtml" />
+      <File FileName="Course.Ui/Views/Group/Create.cshtml" />
+      <File FileName="Course.Ui/wwwroot/js/demo/main.js" />
+      <File FileName="Course.Ui/Resources/PaginatedResponseResource.cs" />
+      <File FileName="Course.Ui/wwwroot/vendor/chart.js/Chart.min.js" />
+      <File FileName="Course.Ui/wwwroot/vendor/chart.js/Chart.bundle.js" />
+      <File FileName="Course.Ui/wwwroot/js/demo/chart-area-demo.js" />
+      <File FileName="Course.Ui/wwwroot/vendor/chart.js/Chart.js" />
+      <File FileName="Course.Ui/Controllers/StudentController.cs" Line="74" Column="14" />
+      <File FileName="Course.Ui/Resources/StudentListItemGetResponse.cs" />
+      <File FileName="Course.Ui/Views/Student/Index.cshtml" />
+      <File FileName="Course.Ui/Resources/StudentCreateRequest.cs" />
+      <File FileName="Course.Ui/Views/Student/Create.cshtml" Line="42" Column="23" />
+      <File FileName="Course.Ui/Views/Student/Edit.cshtml" />
+      <File FileName="Course.Data/Migrations/20240606043524_TablesCreated.Designer.cs" />
+      <File FileName="Course.Ui/appsettings.json" />
+      <File FileName="Course.Ui/Resources/StudentCreateWithGroupRequest.cs" Line="20" Column="1" />
+      <File FileName="Course.Ui/Service/ICrudService.cs" Line="9" Column="52" />
+      <File FileName="Course.Ui/Service/CrudService.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CourseApp" expanded="True">
+            <Node name="Course.Api" expanded="True" />
+            <Node name="Course.Service" expanded="True">
+              <Node name="Implementations" expanded="True" />
+            </Node>
+            <Node name="Course.Ui">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Filter" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Resources" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="CrudService.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Student" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True">
+                  <Node name="demo" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
